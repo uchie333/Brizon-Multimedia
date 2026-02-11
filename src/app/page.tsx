@@ -28,7 +28,7 @@ export default function Home() {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this
+      emailjs.init("zoASJB445UJl6-XCq"); // Your actual Public Key
       
       const templateParams = {
         from_name: formData.name,
@@ -38,8 +38,8 @@ export default function Home() {
       };
 
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID',    // You'll need to replace this
-        'YOUR_TEMPLATE_ID',    // You'll need to replace this
+        'service_7x6ebe6',    // Your actual Service ID
+        'template_rqgwtcq',    // Your actual Template ID
         templateParams
       );
 
